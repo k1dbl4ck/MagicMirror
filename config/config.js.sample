@@ -5,7 +5,7 @@
  */
 
 var config = {
-	port: 80,
+	port: 8080,
 
 	language: 'en',
 	timeFormat: 24,
@@ -21,32 +21,14 @@ var config = {
 		},
 		{
 			module: 'calendar',
-			header: 'Times of Chill',
+			header: 'US Holidays',
 			position: 'top_left',
 			config: {
 				calendars: [
-
-            {
-                symbol: 'calendar-check-o ',
-                url: 'webcal://www.webcal.fi/cal.php?id=506format=icswrn=1wp=4wf=12color=%233C78D8cntr=zalang=enrid=wc'
-            }
-
-
-
-				]
-			}
-		},
-    {
-			module: 'calendar',
-			header: 'Da Mooon',
-			position: 'top_left',
-			config: {
-				calendars: [
-        {
-            symbol: 'calendar-check-o ',
-            url: 'webcal://www.webcal.fi/cal.php?id=41format=icsph=1ecl=1pa=1es=1du=miwrn=1wp=2wf=26color=%23666666cntr=zalang=enrid=wc'
-          }
-
+					{
+						symbol: 'calendar-check-o ',
+						url: 'webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics'
+					}
 				]
 			}
 		},
@@ -58,17 +40,17 @@ var config = {
 			module: 'currentweather',
 			position: 'top_right',
 			config: {
-				location: 'Pretoria, ZA',
-				appid: 'ac9cf52520b8dcb29199632adff26973'
+				location: 'New York',
+				appid: 'YOUR_OPENWEATHER_API_KEY'
 			}
 		},
 		{
 			module: 'weatherforecast',
 			position: 'top_right',
-			header: 'Pretoria, South Africa',
+			header: 'Weather Forecast',
 			config: {
-	            location: 'Pretoria, ZA',
-	            appid: 'ac9cf52520b8dcb29199632adff26973'
+	            location: 'New York',
+	            appid: 'YOUR_OPENWEATHER_API_KEY'
 			}
 		},
 		{
@@ -79,11 +61,7 @@ var config = {
 					{
 						title: "New York Times",
 						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					},
-          {
-            title:"Russia Today",
-            url: "https://www.rt.com/rss/"
-          }
+					}
 				],
 				showSourceTitle: true,
 				showPublishDate: true
