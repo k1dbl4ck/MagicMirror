@@ -61,6 +61,7 @@ Temporary Items
 /modules/**
 !/modules/default/**
 !/modules/README.md**
+!/modules/omni/**
 
 # Ignore changes to the custom css files.
 /css/custom.css
